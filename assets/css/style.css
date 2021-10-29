@@ -106,11 +106,9 @@ header section article:nth-of-type(1) {
   margin-top: 20%;
 }
 #headArticleMan img {
-  width: 45vw;
+  width: 110%;
 }
 #headArticleMan {
-  display: flex;
-  align-items: flex-start;
   animation-duration: 1s;
   animation-name: manRotate;
   animation-iteration-count: infinite;
@@ -321,4 +319,9 @@ input {
   border-radius: 5px;
   margin: 5%;
   border: none;
+  transition: 2s;
+}
+
+.popUpArticle button:hover {
+  background-color: #ff3571;
 }
