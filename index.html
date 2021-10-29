@@ -161,20 +161,32 @@
     <!-- ###### -->
     <footer>
         <section class="wrapper">
+
             <div class="firstDivFifthSec">
+                <article class="popUpArticle" id="popUp">
+                    <p>🥳</p>
+                    <h3>YOUR EMAIL HAS BEEN CONFIRMED. THANKS FOR SUBSCRIBING</h3>
+                    <p>Now we just need to confirm your email address - please click the link in the email we sent you,
+                        Thanks!
+                    </p>
+                    <button onclick="viewPop()">BACK TO DESIGNERCHALLENGE.COM</button>
+                </article>
                 <h2>Do you like this challenge?</h2>
                 <p>Subscribe to be the first to hear about updates, tips and recommendations!</p>
-                <form action="">
+                <form action="" onsubmit="return false">
                     <div>
-                        <input type="email" name="emain" id="email" placeholder="Write your email here">
+                        <input onchange="subEmail()" type="email" name="emain" id="email"
+                            placeholder="Write your email here">
                     </div>
                     <div>
-                        <input id="buttonSub" type="submit" value="Subscribe">
+                        <input onclick="viewPop()" id="buttonSub" type="submit" value="Subscribe">
                     </div>
                 </form>
             </div>
             <p id="lastP">Created with Love by a Webdesigner</p>
         </section>
+
+
     </footer>
 
     <script src="assets/js/main.js"></script>
